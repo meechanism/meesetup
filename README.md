@@ -71,27 +71,28 @@ After installing iTerm, the following needs to be done:
         such as `gitk` and `git gui`
 5. Setup git (creating ssh key, adding it to github, etc)
 6. Add git aliases
-    ```alias.aa=add --all
-alias.bv=branch -vv
-alias.ba=branch -ra
-alias.bd=branch -d
-alias.ca=commit --amend
-alias.cb=checkout -b
-alias.cm=commit -a --amend -C HEAD
-alias.ci=commit -a -v
-alias.co=checkout
-alias.di=diff
-alias.ll=log --pretty=format:%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --numstat
-alias.ld=log --pretty=format:%C(yellow)%h\ %C(green)%ad%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=short --graph
-alias.ls=log --pretty=format:%C(green)%h\ %C(yellow)[%ad]%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=relative
-alias.mm=merge --no-ff
-alias.st=status --short --branch
-alias.tg=tag -a
-alias.pu=push --tags
-alias.un=reset --hard HEAD
-alias.uh=reset --hard HEAD^
-alias.cleanup=!git branch --merged | grep  -v '\*\|master\|develop' | xargs -n 1 git branch -d
-```
+    ```sh
+    alias.aa=add --all
+    alias.bv=branch -vv
+    alias.ba=branch -ra
+    alias.bd=branch -d
+    alias.ca=commit --amend
+    alias.cb=checkout -b
+    alias.cm=commit -a --amend -C HEAD
+    alias.ci=commit -a -v
+    alias.co=checkout
+    alias.di=diff
+    alias.ll=log --pretty=format:%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --numstat
+    alias.ld=log --pretty=format:%C(yellow)%h\ %C(green)%ad%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=short --graph
+    alias.ls=log --pretty=format:%C(green)%h\ %C(yellow)[%ad]%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=relative
+    alias.mm=merge --no-ff
+    alias.st=status --short --branch
+    alias.tg=tag -a
+    alias.pu=push --tags
+    alias.un=reset --hard HEAD
+    alias.uh=reset --hard HEAD^
+    alias.cleanup=!git branch --merged | grep  -v '\*\|master\|develop' | xargs -n 1 git branch -d
+    ```
 
 # Visual Studio Code setup
 
