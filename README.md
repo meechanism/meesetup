@@ -38,6 +38,10 @@ I'm usually developing on an Apple MacBook pro, so OSX is the operating system.
     - Go to: `System Settings > Dock` and change size to smallish.
     - Right click the `Download` folder in dock and chage `View Content as` to
         `List`
+5. Show all filenames and extensions:
+    - Go to Finder
+    - Click on Advanced tab
+    - Check 'Show all filename extensions`
 
 # Software clients to download and install
 
