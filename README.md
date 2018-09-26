@@ -39,9 +39,10 @@ I'm usually developing on an Apple MacBook pro, so OSX is the operating system.
     - Right click the `Download` folder in dock and chage `View Content as` to
         `List`
 5. Show all filenames and extensions:
-    - Go to Finder
+    - Go to Finder > Preferences
     - Click on Advanced tab
-    - Check 'Show all filename extensions`
+    - Check `Show all filename extensions`
+    - Check `Keep folders on top when sorting by name`
 
 # Software clients to download and install
 
@@ -121,6 +122,9 @@ After installing iTerm, the following needs to be done:
 2. Install extensions:
     - Sass (syntax highlighting for sass/scss)
     - Document This (for generated JSDoc)
+3. Setup usage from command line: 
+    - Open the Command Palette (⇧⌘P) and type `shell command` to find the Shell Command: Install 'code' command in PATH command.
+    - Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder
 
 
 # Mee miss anything?
