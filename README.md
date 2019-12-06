@@ -98,6 +98,7 @@ After installing iTerm, the following needs to be done:
     alias.uh=reset --hard HEAD^
     alias.cleanup=!git branch --merged | grep  -v '\*\|master\|develop' | xargs -n 1 git branch -d
     ```
+7. Spice up zsh, add colors, context, and more: https://github.com/ohmyzsh/ohmyzsh
 
 # Visual Studio Code setup
 
@@ -122,7 +123,7 @@ After installing iTerm, the following needs to be done:
 2. Install extensions:
     - Sass (syntax highlighting for sass/scss)
     - Document This (for generated JSDoc)
-3. Setup usage from command line: 
+3. Setup usage from command line:
     - Open the Command Palette (⇧⌘P) and type `shell command` to find the Shell Command: Install 'code' command in PATH command.
     - Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder
 
