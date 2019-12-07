@@ -49,6 +49,7 @@ I'm usually developing on an Apple MacBook pro, so OSX is the operating system.
 Note: All of these are free.
 
 1. Browsers: Because I need to test in these
+    - Brave (primary browser)
     - Chrome
     - Firefox
     - Opera
@@ -75,7 +76,8 @@ After installing iTerm, the following needs to be done:
     - The brew install comes with some nice tools installed that I like using,
         such as `gitk` and `git gui`
 5. Setup git (creating ssh key, adding it to github, etc)
-6. Add git aliases
+6. If your GIT has 2FA enabled, you will need to generate a [personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+7. Add git aliases
     ```sh
     alias.aa=add --all
     alias.bv=branch -vv
