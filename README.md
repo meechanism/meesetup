@@ -19,7 +19,8 @@ I'm usually developing on an Apple MacBook pro, so OSX is the operating system.
 
 # OSX: System Settings
 
-1. Turn on scroll bars
+1. Scroll Bars and Dark Theme
+    - Go to: `System Settings > General > Appearance` and select `Dark`
     - Go to: `System Settings > General > Show Scroll Bars` and select `Always`
     - ***Why do I do this?*** I'm a front end developer, meaning I see and
         evaluate user interfaces on the daily. Having that extra width
