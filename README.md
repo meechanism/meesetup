@@ -67,10 +67,11 @@ After installing iTerm, the following needs to be done:
 
 1. Update default location of screen captures.
    - Open terminal: `defaults write com.apple.screencapture location ~/Documents/Screenshots`
-2. Install [Homebrew](https://brew.sh/)
-3. Using Homebrew, install the below:
-   - `brew install node`
+2. Install [Homebrew](https://brew.sh/), then:
    - `brew install git`
+3. Install NVM (DO NOT USE HOMEBREW) and node:
+   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash`
+   - `nvm install node`
 4. Use the Homebrew version of git (as opposed to Apple's preinstalled flavor)
    - Add `export PATH="/usr/local/bin:${PATH}"` to `~/.bash_profile`
    - Refresh session: `source ~/.bash_profile`
@@ -95,28 +96,31 @@ After installing iTerm, the following needs to be done:
     $ git config --global --add difftool.kdiff3.path "/Applications/kdiff3.app/Contents/MacOS/kdiff3"
     $ git config --global --add difftool.kdiff3.trustExitCode false
     ```
-8. Add git aliases
+8. Edit global `.gitconfig`
    ```sh
-   alias.aa=add --all
-   alias.bv=branch -vv
-   alias.ba=branch -ra
-   alias.bd=branch -d
-   alias.ca=commit --amend
-   alias.cb=checkout -b
-   alias.cm=commit -a --amend -C HEAD
-   alias.ci=commit -a -v
-   alias.co=checkout
-   alias.di=diff
-   alias.ll=log --pretty=format:%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --numstat
-   alias.ld=log --pretty=format:%C(yellow)%h\ %C(green)%ad%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=short --graph
-   alias.ls=log --pretty=format:%C(green)%h\ %C(yellow)[%ad]%Cred%d\ %Creset%s%Cblue\ [%cn] --decorate --date=relative
-   alias.mm=merge --no-ff
-   alias.st=status --short --branch
-   alias.tg=tag -a
-   alias.pu=push --tags
-   alias.un=reset --hard HEAD
-   alias.uh=reset --hard HEAD^
-   alias.cleanup=!git branch --merged | grep  -v '\*\|master\|develop' | xargs -n 1 git branch -d
+   [user]
+      signingkey = rsa4096/CAB3D4DA702FFD01
+      name = Mee Cha
+      email = mee.cha.nism@gmail.com
+   [merge]
+      tool = kdiff3
+   [mergetool "kdiff3"]
+      path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+      trustExitCode = false
+   [diff]
+      guitool = kdiff3
+   [difftool "kdiff3"]
+      path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+      trustExitCode = false
+   [alias]
+      co = checkout
+      ci = commit
+      st = status -s
+      br = branch
+      hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+      type = cat-file -t
+      cleanup = git clone https://github.com/EarnUp/olympic-lib.git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
+      # cleanup=!git branch --merged | grep  -v '\*\|master\|develop' | xargs -n 1 git branch -d
    ```
 8. Spice up zsh, add colors, context, and more: https://github.com/ohmyzsh/ohmyzsh
 
