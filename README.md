@@ -40,7 +40,7 @@ I'm usually developing on an Apple MacBook pro, so OSX is the operating system.
     - Right click the `Download` folder in dock and chage `View Content as` to
         `List`
 5. Show all filenames and extensions:
-    - Go to Finder > Preferences
+    - Go to `Finder > Preferences`
     - Click on Advanced tab
     - Check `Show all filename extensions`
     - Check `Keep folders on top when sorting by name`
