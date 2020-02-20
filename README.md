@@ -69,7 +69,7 @@ After installing iTerm, the following needs to be done:
    - Open terminal: `defaults write com.apple.screencapture location ~/Documents/Screenshots`
 2. Install [Homebrew](https://brew.sh/), then:
    - `brew install git`
-3. Install NVM (DO NOT USE HOMEBREW) and node:
+3. Install NVM (DO _NOT_ USE HOMEBREW) and node:
    - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash`
    - `nvm install node`
 4. Use the Homebrew version of git (as opposed to Apple's preinstalled flavor)
