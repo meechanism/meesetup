@@ -126,6 +126,7 @@ After installing iTerm, the following needs to be done:
 
 # Visual Studio Code setup
 
+1. Install command line tools. Open VS Code and then press `Cmd + Shift + P` and type in `Install Command line tools`.
 1. If theme is not already dark, make it dark. Dark is the way.
    :new_moon_with_face:
 2. Update user settings with:
