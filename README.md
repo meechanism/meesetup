@@ -73,10 +73,8 @@ After installing iTerm, the following needs to be done:
    - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash`
    - `nvm install node`
 4. Use the Homebrew version of git (as opposed to Apple's preinstalled flavor)
-   - Add `export PATH="/usr/local/bin:${PATH}"` to `~/.bash_profile`
-   - Refresh session: `source ~/.bash_profile`
-   - The brew install comes with some nice tools installed that I like using,
-     such as `gitk` and `git gui`
+   - New apple chips do not need the path to be exported in your shell profile.
+   - Install Git Gui/gitk: `brew install git-gui`
 5. Setup git (creating ssh key, adding it to github, etc)
 6. If your GIT has 2FA enabled, you will need to generate a [personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
 7. If using `GPG`, install the cli and [GPG suite](https://gpgtools.org/) to share it in keychain. This will sign your commits.
