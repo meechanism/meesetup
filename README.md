@@ -84,7 +84,9 @@ After installing iTerm, the following needs to be done:
     Read more on [signing commits](https://help.github.com/en/github/authenticating-to-github/signing-commits)
 7. Download mergetool `kdiff3` and set it as default:
     ```sh
-    $ brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/6a96e5ea44803e52a43c0c89242390f75d1581ab/Casks/kdiff3.rb
+    $ brew update
+    $ brew tap homebrew/cask
+    $ brew install --cask kdiff3
 
     $ git config --global --add merge.tool kdiff3
     $ git config --global --add mergetool.kdiff3.path  "/Applications/kdiff3.app/Contents/MacOS/kdiff3"
@@ -94,6 +96,8 @@ After installing iTerm, the following needs to be done:
     $ git config --global --add difftool.kdiff3.path "/Applications/kdiff3.app/Contents/MacOS/kdiff3"
     $ git config --global --add difftool.kdiff3.trustExitCode false
     ```
+
+    Open up the app manually in `Applications` and allow it to open in `System Preferences > Privacy & Security`
 8. Edit global `.gitconfig`
    ```sh
    [user]
@@ -106,6 +110,7 @@ After installing iTerm, the following needs to be done:
       path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
       trustExitCode = false
    [diff]
+      tool = kdiff3
       guitool = kdiff3
    [difftool "kdiff3"]
       path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
